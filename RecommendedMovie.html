@@ -1,0 +1,58 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Recommended Movies</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script type="text/javascript" src="/plugin/jquery-easyui-1.4.3/jquery.min.js"></script>
+</head>
+<body <!--- style="background-color: white"-->>
+    <div id="carousel" style="border:1px solid #000000; margin:0px auto; width:400px;">
+        <div id="tabpic">
+            <div style="display:block;"><img src="images/1.jpg" width="400px" /></div>
+            <div style="display:none;"><img src="images/2.jpg" width="400px" /></div>
+            <div style="display:none;"><img src="images/3.jpg" width="400px" /></div>
+            <div style="display:none;"><img src="images/4.jpg" width="400px" /></div>
+			<div style="display:none;"><img src="images/5.jpg" width="400px" /></div>
+			<div style="display:none;"><img src="images/6.jpg" width="400px" /></div>
+			<div style="display:none;"><img src="images/7.jpg" width="400px" /></div>
+        </div>
+
+        <div style=float:right>
+            <a href="javascript:void(0)" name="tablink" onclick="div_tab(0)" style="color:#0000ff;">0</a>
+            <a href="javascript:void(0)" name="tablink" onclick="div_tab(1)" style="color:#0000ff;">1</a>
+            <a href="javascript:void(0)" name="tablink" onclick="div_tab(2)" style="color:#0000ff;">2</a>
+            <a href="javascript:void(0)" name="tablink" onclick="div_tab(3)" style="color:#0000ff;">3</a>
+			<a href="javascript:void(0)" name="tablink" onclick="div_tab(4)" style="color:#0000ff;">4</a>
+			<a href="javascript:void(0)" name="tablink" onclick="div_tab(5)" style="color:#0000ff;">5</a>
+			<a href="javascript:void(0)" name="tablink" onclick="div_tab(6)" style="color:#0000ff;">6</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function div_tab(tabName){
+        var tabLinkArr=document.getElementsByName("tablink");
+        var tabPicArr=document.getElementById("tabpic").getElementsByTagName("div");
+        for(var i=0;i<tabLinkArr.length;i++){
+            if(i==tabName){
+                tabLinkArr[i].style.color="#ff0000";
+                tabPicArr[i].style.display="block";
+            } else{
+                tabLinkArr[i].style.color="#0000ff";
+                tabPicArr[i].style.display="none";
+            }
+        }
+    }
+    var i=0;
+    function auto_tab_div(){
+    //�p�G�������̫��@�i�Ϥ��h���s�q�Ĥ@�i�}�l
+    if(i>6){
+        i=0;
+    }
+    //�C�����۰�Ū���U�@�i�Ϥ�
+    div_tab(i);
+        i++;
+    }
+    setInterval("auto_tab_div()",4000);
+</script>
