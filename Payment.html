@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Sessions of Melbourne Central(Hoyts) List</title>
+		<title>Pay Now</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -25,8 +25,8 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 halfscreen fade-up">
 						<div class="inner">
-							<h1>Sessions at Hoyts Melbourne Central</h1>
-							<h2> Select a session</h2>
+							<h1>PayPal</h1>
+							<h2> please pay via paypal after choosing a seat</h2>
 						</div>
 					</section>
 
@@ -35,68 +35,37 @@
 						<section>
 							<a href="#" class="image"><img src="images/sessions.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
+								<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="s3667339@student.rmit.edu.au">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="item_name" value="cinema ticket">
+<input type="hidden" name="button_subtype" value="products">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="currency_code" value="AUD">
+<input type="hidden" name="tax_rate" value="2.000">
+<input type="hidden" name="add" value="1">
+<input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+<table>
+<tr><td><input type="hidden" name="on0" value="Seat type">Seat type</td></tr><tr><td><select name="os0">
+	<option value="VIP seats">VIP seats $20.00 AUD</option>
+	<option value="Normal seats">Normal seats $10.00 AUD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="option_select0" value="VIP seats">
+<input type="hidden" name="option_amount0" value="20.00">
+<input type="hidden" name="option_select1" value="Normal seats">
+<input type="hidden" name="option_amount1" value="10.00">
+<input type="hidden" name="option_index" value="0">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 
 							<!-- courtesy w3schools.com -->
 							</div>
 						</section>
 
-						<table>
-						  <tr>
-						    <th>Movie</th>
-						    <th>Cinema</th>
-								<th>Location</th>
-						    <th>Time</th>
-
-						  </tr>
-						  <tr>
-						    <td>Gozilla : King of the Monsters </td>
-						    <td>HOYTS Melbourne Central</td>
-								<td>Melbourne</td>
-						    <td>10:00am</td>
-
-						  </tr>
-						  <tr>
-								<td>Alaadin </td>
-							 <td>HOYTS Melbourne Central</td>
-							 <td>Melbourne</td>
-							 <td>10:00am</td>
-						  </tr>
-						  <tr>
-								<td>Avenges:Endgame </td>
- 							 <td>HOYTS Melbourne Central</td>
-								<td>Melbourne</td>
- 							 <td>9:00am</td>
-						  </tr>
-						  <tr>
-								<td>Dark Phoenix</td>
-							 <td>HOYTS Melbourne Central</td>
-								<td>Melbourne</td>
-							 <td>12:30pm</td>
-						  </tr>
-						  <tr>
-								<td>The Hustle </td>
-							<td>HOYTS Melbourne Central</td>
-								<td>Melbourne</td>
-							 <td>1:00pm</td>
-						  </tr>
-						  <tr>
-								<td>Toy Story 4</td>
- 							 <td>HOYTS Melbourne Central</td>
- 							 <td>Melbourne</td>
- 							 <td>6:00pm</td>
-						  </tr>
-						  <tr>
-						  <td>Gozilla : King of the Monsters </td>
-						    <td>HOYTS Melbourne Central</td>
-								<td>Melbourne</td>
-						    <td>9:00pm</td>
-							</tr>
-							<tr>
-							<td>Dark Phoenix</td>
-							 <td>HOYTS Melbourne Central</td>
-								<td>Melbourne</td>
-							 <td>10:30pm</td></tr>
-						</table>
+						
 
 
 		<!-- Scripts -->
